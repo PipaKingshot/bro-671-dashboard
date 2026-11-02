@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#07111c">
   <title>BRO 671 Public Dashboard</title>
   <meta name="description" content="Kingdom 671 Brotherhood player intelligence dashboard">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <header class="topbar">
@@ -36,6 +36,11 @@
         <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search player" autocomplete="off"></label>
         <div class="filters">
           <select id="rankFilter" aria-label="Alliance rank"><option value="all">All ranks</option><option value="Leader">Leader</option><option value="R4">R4</option><option value="R3">R3</option><option value="R2">R2</option><option value="R1">R1</option></select>
+          <div class="mobile-sort" aria-label="Sort players">
+            <label for="mobileSort">Sort by</label>
+            <select id="mobileSort"></select>
+            <button id="mobileDir" type="button" aria-label="Change sort direction">Descending ↓</button>
+          </div>
         </div>
       </div>
       <div id="sectionIntro" class="section-intro"></div>
@@ -52,6 +57,6 @@
     </div>
   </dialog>
 
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>
