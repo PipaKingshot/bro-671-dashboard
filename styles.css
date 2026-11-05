@@ -36,6 +36,8 @@ body{overflow-x:hidden}
   .data-card{min-width:0;padding:14px}
   .portrait-strip,.gear-gallery{-webkit-overflow-scrolling:touch;scrollbar-width:thin}
 }
+.trials-head,.trials-row{grid-template-columns:minmax(200px,1.5fr) repeat(7,minmax(90px,1fr))}
+@media(max-width:800px){.trials-row{display:grid;grid-template-columns:1fr 1fr}.trials-row .player{grid-column:1/-1}}
 @media(max-width:640px){
   .topbar{height:66px;padding:0 13px}
   .brand{gap:9px;min-width:0}
